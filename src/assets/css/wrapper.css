@@ -11,7 +11,7 @@
   }
 }
 .hero-img ~ h2 {
-  @apply max-w-xs mx-auto font-semibold mt-5 text-white text-xl lg:text-3xl;
+  @apply max-w-xs mx-auto font-semibold mt-5 text-white text-xl lg:text-3xl text-base;
 }
 /* LANDING PAGE */
 
