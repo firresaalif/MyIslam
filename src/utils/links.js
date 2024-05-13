@@ -18,7 +18,7 @@ export const typesLink = [
 ];
 
 export const footerLinks = [
-  { id: 1, name: 'Facebook', link: 'https://www.facebook.com/dharmarst', logo: 'ic:baseline-facebook' },
-  { id: 2, name: 'Instagram', link: 'https://www.instagram.com/inyoman_dharma/', logo: 'bi:instagram' },
-  { id: 3, name: 'Github', link: 'https://github.com/Marst313', logo: 'ri:github-fill' },
+  { id: 1, name: 'Facebook', link: 'https://www.facebook.com/ProfesionalGamerHP?locale=id_ID', logo: 'ic:baseline-facebook' },
+  { id: 2, name: 'Instagram', link: 'https://www.instagram.com/fiersaalif/', logo: 'bi:instagram' },
+  { id: 3, name: 'Github', link: 'https://github.com/firresaalif', logo: 'ri:github-fill' },
 ];
