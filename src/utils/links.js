@@ -1,7 +1,6 @@
 export const links = [
   { id: 1, text: 'Surat', path: '/', icon: 'fa6-solid:book-quran' },
   { id: 2, text: 'Doa', path: 'doa', icon: 'fa-solid:praying-hands' },
-  { id: 3, text: 'Jadwal Sholat', path: 'jadwal-sholat', icon: 'mdi:islam' },
 ];
 
 export const murottals = [

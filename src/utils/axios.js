@@ -9,7 +9,7 @@ export const customFetchDoa = axios.create({
 });
 
 export const customFetchJadwal = axios.create({
-  baseURL: 'https://private-amnesiac-57e33-fathimah.apiary-proxy.com/sholat/format//jadwal/kota/',
+  baseURL: 'https://api.aladhan.com/v1/timingsByCity',
   headers: { 'Content-Type': 'application/json' },
 });
 

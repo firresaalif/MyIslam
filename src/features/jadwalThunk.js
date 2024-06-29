@@ -8,16 +8,18 @@ export const locationThunk = async (lokasi, thunkAPI) => {
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data.message);
   }
-};
+};  
 export const jadwalThunk = async (lokasi, thunkAPI) => {
   try {
-    const date = new Date();
-    const tanggal = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
-    const bulan = date.getMonth() < 10 ? `0${date.getMonth()}` : date.getMonth();
+    const resp = await customFetchJadwal.get('', {
+      params: {
+        city: lokasi,
+        country: 'Indonesia',
+        method: 2, // Metode perhitungan
+      },
+    });
 
-    const resp = await axios.get(`https://private-amnesiac-57e33-fathimah.apiary-proxy.com/sholat/format/json/jadwal/kota/${lokasi}/tanggal/${date.getFullYear()}-${bulan}-${tanggal}`);
-
-    return resp.data;
+    return resp.data.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data.message);
   }
